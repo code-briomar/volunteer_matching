@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Login - Echo Nest</title>
+    <link rel="stylesheet" href="organization_login.css"> 
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Echo Nest</h1> <!-- App Name -->
+        <h2>Organization Login</h2>
+        <form action="opportunitydetails.html" method="GET"> 
+            <div class="form-group">
+                <label for="orgName">Organization Name</label>
+                <input type="text" id="orgName" name="orgName"placeholder="Enter your organization name" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="links">
+            <a href="/forgot-password">Forgot Password?</a> <!-- Link to forgot password page -->
+            <p>Don't have an account? <a href="organization_sign_up.html">Register now!</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
