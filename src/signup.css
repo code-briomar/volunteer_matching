@@ -1,0 +1,203 @@
+/* Global reset for padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    /* Ensures padding and borders are included in element's width and height */
+}
+
+/* Body styling with flexbox for centering the content */
+body {
+    display: flex;
+    min-height: 100vh; 
+    /* Full viewport height */
+    background: #8A1935; 
+    /* Background color */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center; 
+    /* Center content horizontally */
+}
+
+/* Wrapper styling for the  form */
+.wrapper {
+    position: relative;
+    background: #fff;
+     /* White background for the form */
+    padding: 34px;
+    /* Padding around the content */
+    max-width: 400px;
+     /* Maximum width of the form */
+    width: 100%; 
+    /* Full width inside the max width */
+    border-radius: 6px;
+     /* Rounded corners */
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2); 
+    /* Light shadow for depth */
+}
+
+/* Styling the main heading (h2) inside the form wrapper */
+.wrapper h2 {
+    position: relative;
+    font-weight: 600; 
+    /* Semi-bold font */
+    color: #333; 
+    /* Text color */
+    font-size: 39px;
+     /* Font size */
+}
+
+/* Styling for the small line under the heading */
+.wrapper h2::before {
+    content: ""; 
+    /* Empty content for the decorative line */
+    height: 3px; 
+    /* Line height */
+    width: 28px;
+    /* Line width */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #8A1935; /* Line color */
+    border-radius: 12px;
+     /* Rounded corners for the line */
+}
+
+/* Form container with top margin */
+.wrapper form {
+    margin-top: 30px; 
+    /* Space above the form */
+}
+
+/* Input box container inside the form */
+.wrapper form .input-box {
+    margin: 10px 0;
+    /* Space around each input box */
+    height: 35px; 
+    /* Height of the input box */
+    position: relative;
+    width: 300px; 
+    /* Fixed width for the input box */
+}
+
+/* Styling for input fields */
+form .input-box input {
+    outline: none; 
+    /* Remove outline when focused */
+    padding: 0 15px; 
+    /* Inner padding */
+    color: #333; 
+    /* Text color */
+    font-size: 17px;
+     /* Font size */
+    border: 1.5px solid #c7bebe; 
+    /* Border color and thickness */
+    height: 100%; 
+    /* Full height of the input box */
+    width: 100%; 
+    /* Full width of the input box */
+    padding-right: 100px; 
+    /* Extra space for a dropdown if needed */
+    box-sizing: border-box; 
+    /* Include padding and border in width/height */
+    border-bottom-width: 2.5px; 
+    /* Thicker bottom border */
+    border-radius: 6px; 
+    /* Rounded corners */
+    transition: all 0.3s ease;
+     /* Smooth transition for border color */
+}
+
+/* Styling for the input fields when focused or valid */
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #8A1935; 
+    /* Highlight color on focus/valid input */
+}
+
+/* Styling for select dropdown  */
+.input-box select {
+    position: absolute;
+    right: 0;
+     /* Align dropdown to the right */
+    width: 100%; 
+    /* Full width of the input box */
+    height: 100%; 
+    /* Full height of the input box */
+    border-radius: 6px; 
+    /* Rounded corners */
+    background-color: transparent; 
+    /* Transparent background */
+    cursor: pointer;
+     /* Pointer cursor on hover */
+    color: #333; 
+    /* Text color */
+    font-size: 17px; 
+    /* Font size */
+}
+
+/* Policy section styling  */
+form .policy {
+    font-size: 11px; 
+    /* Small text size */
+    display: flex; 
+    /* Flexbox for alignment */
+    align-items: center; 
+    /* Align items vertically */
+}
+
+/* Form label styling  */
+form h3 {
+    font-size: 15px;
+     /* Font size */
+    font-weight: 500; 
+    /* Medium font weight */
+    color: #707070; 
+    /* Text color */
+    margin-left: 10px; 
+    /* Spacing on the left */
+}
+
+/* Button inside the input box */
+.input-box.button input {
+    color: #fff;
+     /* White button text */
+    border: none;
+     /* Remove border */
+    background: #8A1935; 
+    /* Button background color */
+    letter-spacing: 1px; 
+    /* Increase letter spacing */
+    cursor: pointer; 
+    /* Pointer cursor on hover */
+}
+
+/* Hover effect for the button */
+.input-box.button input:hover {
+    background: #8A1935;
+     /* Button background remains the same */
+}
+
+/* Styling for the text  */
+form .text h3 {
+    width: 100%;
+     /* Full width */
+    color: #333;
+     /* Text color */
+    text-align: center; 
+    /* Center the text */
+}
+
+/* Link styling inside the form  */
+form.text h3 a {
+    text-decoration: none;
+     /* Remove underline from the link */
+    color: #8A1935;
+     /* Link color */
+}
+
+/* Hover effect for links inside the form */
+form.text h3 a:hover {
+    text-decoration: underline; 
+    /* Add underline on hover */
+}
