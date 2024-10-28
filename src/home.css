@@ -109,9 +109,9 @@ button:hover {
     transform: scale(3.1); /* Scale on hover */
     background-color: white; 
     /* Background color change on hover */
-    color: #f00808; 
+    color: #8A1935; 
     /* Text color change on hover */
-    border-color: #f00808; 
+    border-color: #8A1935; 
     /* Keep border color consistent */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
     /* Add shadow effect on hover */
@@ -178,9 +178,9 @@ button:hover {
     transform: scale(3.1); /* Scale on hover */
     background-color: white; 
     /* Background color change on hover */
-    color: #f00808; 
+    color: #8A1935; 
     /* Text color change on hover */
-    border-color: #f00808; 
+    border-color: #8A1935; 
     /* Keep border color consistent */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
     /* Add shadow effect on hover */
