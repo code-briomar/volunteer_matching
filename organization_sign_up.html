@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organization | Sign Up</title>
+    <link rel="stylesheet" href="organization_sign_up.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Form Title -->
+      <div class="title_container">
+        <h1 class="title">Register your Organization</h1>
+        <p class="subtitle">
+          on <b>Echo Nest</b> to connect with volunteers
+        </p>
+      </div>
+
+      <!-- Form Start -->
+      <form action="./organization_home_page.html" enctype="multipart/form-data" method="get">
+      <div class="form_container">
+
+        <!-- Organization's Name -->
+        <div class="input_container">
+          <input type="text" placeholder="Organization's Name" />
+        </div>
+
+        <!-- Contact Information -->
+        <div class="input_group">
+          <h2>Contact Information</h2>
+          <div class="input_container">
+            <input type="text" placeholder="Contact Person's Name" />
+          </div>
+          <div class="input_container">
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <div class="input_container">
+            <input type="text" placeholder="Email Address" />
+          </div>
+          <div class="input_container">
+            <input type="text" placeholder="Physical Address" />
+          </div>
+        </div>
+
+        <!-- Select Organization Type -->
+        <div class="input_container">
+          <select name="organization_type" id="">
+            <option selected>Select Organization Type</option>
+            <option value="non_profit">Non-Profit</option>
+            <option value="ngo">N.G.O</option>
+            <option value="government_agency">Government Agency</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="input_container">
+          <textarea
+            name="mission_statement"
+            placeholder="Mission Statement"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <!-- Description of Activities -->
+        <div class="input_container">
+          <textarea
+            name="description_of_activities"
+            placeholder="Description of Activities"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <!-- Volunteer Opportunities -->
+        <div class="input_container">
+          <textarea
+            name="volunteer_opportunities"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Volunteer Opportunities ( e.g Types of roles available, Skills required, Expected commitment - hours per week, duration )"
+          ></textarea>
+        </div>
+
+        <!-- Benefits of Volunteering -->
+        <div class="input_container">
+          <textarea
+            name="benefits_of_volunteering"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Benefits of Volunteering ( e.g Skills gained, Experience, Networking opportunities )"
+          ></textarea>
+        </div>
+
+        <!-- Organization's Website -->
+        <div class="input_container">
+          <input type="text" placeholder="Organization's Website" />
+        </div>
+
+        <!-- Social Media Profiles -->
+        <div class="input_group">
+          <div class="input_container" placeholder="Twitter Profile"></div>
+          <div class="input_container" placeholder="Twitter Profile"></div>
+          <div class="input_container" placeholder="Twitter Profile"></div>
+        </div>
+
+
+        <!-- Submit Button -->
+        <div class="input_container">
+          <input type="submit" value="Submit" />
+          </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
