@@ -1,0 +1,189 @@
+/* Global reset for margin, padding, and box-sizing */
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body styling with flexbox layout and background image */
+body {
+    
+    overflow-x: hidden; /* Hide any horizontal overflow */
+    display: flex;
+    flex-direction: column; 
+    /* Stack elements vertically */
+    min-height: 100vh;
+    background-image: url(pexels-rocketmann-prod-9486890.jpg);
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents background from repeating */
+   
+    
+}
+
+/* Header fixed at the top */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+}
+
+/* Navigation bar with flex layout */
+nav {
+   
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1300px; 
+    /* Maximum width for nav content */
+    
+}
+
+/* Styling for logo in the navigation bar */
+nav .nav-logo h2 {
+    color: #fbf8f8;
+     /* Logo color */
+    font-weight: 600;
+    font-size: 35px; 
+    /* Logo font size */
+}
+
+/* Navigation links container */
+nav ul {
+    display: flex;
+    gap: 10px; 
+    /* Spacing between navigation links */
+}
+
+/* Styling for navigation links */
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 80%;
+    color: white;
+     /* Text color */
+    border-radius: 30px; 
+    /* Rounded corners */
+    transition: all 0.3s ease; 
+    /* Smooth transition for hover effect */
+    text-decoration: none;
+     /* Remove underline */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #080808; 
+    /* Text color on hover */
+}
+
+/* Button styling */
+button {
+    border: 2px solid #ffffff;
+     /* Button border */
+    background-color: #f8f7f7; 
+    /* Button background color */
+    color: black; 
+    /* Button text color */
+    padding: 12px 30px; 
+    /* Button padding */
+    border-radius: 25px; 
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    font-weight: bold; 
+    /* Bold text */
+    cursor: pointer; 
+    /* Pointer cursor on hover */
+    margin-right: 90px;
+     /* Space to the right */
+    transition: all 0.3s ease; 
+    /* Smooth transition for hover */
+}
+
+/* Hover effect for button */
+button:hover {
+    transform: scale(3.1); /* Scale on hover */
+    background-color: white; 
+    /* Background color change on hover */
+    color: #f00808; 
+    /* Text color change on hover */
+    border-color: #f00808; 
+    /* Keep border color consistent */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    /* Add shadow effect on hover */
+    transform: translateY(-3px); 
+    /* Slight lifting effect */
+}
+
+/* Main body section styling */
+.body-section {
+    color: white; 
+    /* Text color */
+    display: flex;
+    justify-content: space-between;
+     /* Even spacing between elements */
+    align-items: center; 
+    /* Vertically align items */
+    padding: 50px;
+     /* Padding around the section */
+    height: 115vh;
+     /* Full viewport height */
+     
+}
+
+/* Heading styling inside body section */
+.body h1 {
+    color: #ffffff;
+    font-size: 50px; 
+    /* Heading size */
+    font-weight: bold; 
+    /* Bold text */
+    margin-bottom: 30px;
+     /* Space below heading */
+     
+}
+
+/* Paragraph styling inside body section */
+.body p {
+    font-size: 17px; 
+    /* Paragraph text size */
+    margin-bottom: 30px; 
+    /* Space below paragraph */
+    line-height: 1.8; 
+    /* Line height for readability */
+    float:right; 
+}
+/* Button in the body section with a background color and no border */
+.login-btn {
+    background-color: #fff; 
+    /* Button background color */
+    color: black; 
+    /* Button text color */
+    padding: 15px 30px; 
+    /* Button padding */
+    border-radius: 30px; 
+    /* Rounded corners */
+    text-decoration: none; 
+    /* Remove underline from link */
+    font-weight: bold; 
+    /* Bold text */
+}
+
+/* Hover effect for the cooking button */
+.login-btn:hover {
+    transform: scale(3.1); /* Scale on hover */
+    background-color: white; 
+    /* Background color change on hover */
+    color: #f00808; 
+    /* Text color change on hover */
+    border-color: #f00808; 
+    /* Keep border color consistent */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    /* Add shadow effect on hover */
+    transform: translateY(-3px); 
+    /* Slight lifting effect */
+}
