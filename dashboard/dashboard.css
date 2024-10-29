@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('/mnt/data/pexels-alexander-suhorucov-6457563.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1;
+}
+
+header, main {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header and Navigation */
+header {
+    background-color: maroon;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-actions button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* Main Dashboard Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/* Dashboard Panels */
+.summary-panel {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.opportunity-panel {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.applications-panel {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.messages-panel {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.analytics-panel {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.summary-panel, .opportunity-panel, .applications-panel, .messages-panel, .analytics-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Opportunity Management Panel */
+.opportunity-panel ul, .applications-panel ul, .messages-panel ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.add-opportunity {
+    background-color:maroon;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Application and Messaging Buttons */
+.manage-applications, .view-all-messages, .download-report {
+    background-color:maroon;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}

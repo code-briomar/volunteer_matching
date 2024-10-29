@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <h1 class="dashboard-title">Organization Dashboard</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Opportunities</a></li>
+                <li><a href="#">Applications</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+            <div class="user-actions">
+                <button class="notif-icon">🔔</button>
+                <button class="settings-icon">⚙️</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="dashboard-grid">
+            <!-- Summary Overview Panel -->
+            <div class="summary-panel">
+                <h2>Summary Overview</h2>
+                <p>Total Posted Opportunities: <strong>12</strong></p>
+                <p>Active Opportunities: <strong>4</strong></p>
+                <p>Total Applications: <strong>150</strong></p>
+                <p>Volunteer Engagement: <strong>85%</strong></p>
+            </div>
+
+            <!-- Opportunity Management Section -->
+            <div class="opportunity-panel">
+                <h2>Opportunity Management</h2>
+                <button class="add-opportunity">+ Add New Opportunity</button>
+                <ul>
+                    <li>Opportunity 1 - Active</li>
+                    <li>Opportunity 2 - Closed</li>
+                    <li>Opportunity 3 - Active</li>
+                    <li>Opportunity 4 - Upcoming</li>
+                </ul>
+            </div>
+
+            <!-- Applications Section -->
+            <div class="applications-panel">
+                <h2>Applications</h2>
+                <ul>
+                    <li>Volunteer A - Applied on 10/01/2024</li>
+                    <li>Volunteer B - Applied on 10/02/2024</li>
+                    <li>Volunteer C - Applied on 10/05/2024</li>
+                </ul>
+                <button class="manage-applications">Manage Applications</button>
+            </div>
+
+            <!-- Messaging Section -->
+            <div class="messages-panel">
+                <h2>Messages</h2>
+                <p>Recent Messages:</p>
+                <ul>
+                    <li>Volunteer A: "I’m interested in Opportunity 1..."</li>
+                    <li>Volunteer B: "Can I get more info on Opportunity 2?"</li>
+                </ul>
+                <button class="view-all-messages">View All Messages</button>
+            </div>
+
+            <!-- Analytics Section -->
+            <div class="analytics-panel">
+                <h2>Analytics</h2>
+                <p>Total Volunteer Hours: <strong>320 hrs</strong></p>
+                <p>Engagement Rate: <strong>85%</strong></p>
+                <button class="download-report">Download Report</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
