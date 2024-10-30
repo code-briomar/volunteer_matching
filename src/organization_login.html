@@ -9,6 +9,10 @@
       function go_back() {
         window.history.back();
       }
+
+      function go_to_dashboard() {
+        window.location.href = "dashboard/dashboard.html";
+      }
     </script>
   </head>
   <body>
@@ -37,7 +41,9 @@
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" onclick="javascript:go_to_dashboard()">
+          Login
+        </button>
       </form>
       <div class="links">
         <a href="/forgot-password">Forgot Password?</a>
