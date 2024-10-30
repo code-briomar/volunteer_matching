@@ -7,6 +7,9 @@ who want to contribute their time and skills,
 and for organizations or causes that need
 support.
 
+## Deployment
+[https://group-6-volunteer-connect.lomogan.africa/](https://group-6-volunteer-connect.lomogan.africa/)
+
 ## Contributors
 
 1. Naomi Teko
