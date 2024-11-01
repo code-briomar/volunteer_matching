@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="applicationformstyle.css">
+</head>
+<body>
+    <!-- Application Form Container -->
+    <div class="form-container">
+        <h1>Application Form</h1>
+        
+        <form action="/" method="POST">
+            <!-- First Name -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <!-- Last Name -->
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Nationality -->
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <!-- Gender Dropdown -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Describe Yourself -->
+            <label for="describe">Describe Yourself:</label>
+            <textarea id="describe" name="describe" rows="4" required></textarea>
+
+            <!-- Why do you want this role? -->
+            <label for="whyRole">Why do you want this role?</label>
+            <textarea id="whyRole" name="whyRole" rows="4" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('opportunityapplication').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                dob: document.getElementById('dob').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                nationality: document.getElementById('nationality').value,
+                gender: document.getElementById('gender').value,
+                describe: document.getElementById('describe').value,
+                whyRole: document.getElementById('whyRole').value,
+            };
+    
+            fetch('/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.ok) {
+                  
+                    console.log('Application submitted successfully!');
+                } else {
+                    
+                    console.log('There was an error submitting the application.');
+                }
+
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
